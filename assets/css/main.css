@@ -182,7 +182,7 @@ html {
 }
 
 body {
-  background: #242943;
+  background: #ffffff;
 }
 
 body.is-preload *,
@@ -3226,7 +3226,7 @@ button:disabled,
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   background-color: #ffffff;
-  color: #242943;
+  color: #ffffff;
   display: inline-block;
   line-height: 1.65em;
   margin-right: 0.325em;
@@ -3455,18 +3455,36 @@ body.is-preload #header.alt {
 
 /* Banner */
 
+.Topname {
+  color: #ffffff;
+  font-size: 2.5em;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  line-height: 1em;
+  margin: 0 0 0.5em 0;
+  position:relative;
+  text-align: center;
+}
+
 #banner {
   -moz-align-items: center;
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  background-image: url("../../images/banner.jpg");
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-image: url("../../images/IMG_0625.jpg");
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   padding: 6em 0 2em 0;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3626,8 +3644,10 @@ body.is-preload #banner > .inner {
     height: auto;
     margin-bottom: -2.75em;
     max-height: none;
-    min-height: 0;
+    min-height: 40vh;
     top: -2.75em;
+    background-size: contain;
+    background-position: center center;
   }
 
   #banner h1 {
@@ -3653,6 +3673,8 @@ body.is-preload #banner > .inner {
 @media screen and (max-width: 480px) {
   #banner {
     padding: 6em 0 2em 0;
+    background-size: contain;
+    min-height: 35vh;
   }
 
   #banner > .inner .content p br {
