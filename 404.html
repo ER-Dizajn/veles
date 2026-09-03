@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found — Er Dizajn</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0a0b0d">
+<link rel="icon" href="/veles/assets/img/favicon-32.png" sizes="32x32">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Unbounded:wght@700&display=swap">
+<style>
+  /* self-contained: a 404 can be served from any URL depth */
+  :root{--bg:#0a0b0d;--fg:#f4f6fa;--muted:#a4acbb;--brand:#e9b25e;--ink:#17130b;--line:rgba(255,255,255,.12)}
+  *{box-sizing:border-box;margin:0}
+  body{min-height:100svh;display:grid;place-items:center;padding:2rem;text-align:center;
+       font-family:Manrope,ui-sans-serif,system-ui,sans-serif;background:var(--bg);color:var(--fg);
+       line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  body::before{content:"";position:fixed;inset:auto -20% -40% -20%;height:70%;z-index:-1;
+       background:radial-gradient(50% 60% at 50% 90%,rgba(233,178,94,.26),transparent 70%);filter:blur(50px)}
+  .code{font-family:Unbounded,Manrope,sans-serif;font-size:clamp(4rem,18vw,9rem);line-height:1;
+        letter-spacing:-.05em;background:linear-gradient(120deg,#f4f6fa,#e9b25e);
+        -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  h1{font-family:Unbounded,Manrope,sans-serif;font-size:clamp(1.25rem,4vw,1.85rem);margin:1rem 0 .75rem;letter-spacing:-.02em}
+  p{color:var(--muted);max-width:46ch;margin:0 auto}
+  .row{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-top:2rem}
+  a.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.5rem;border-radius:999px;
+        background:var(--brand);color:var(--ink);font-weight:700;text-decoration:none;border:1px solid transparent;
+        transition:transform .16s ease,box-shadow .3s ease}
+  a.btn--ghost{background:transparent;color:var(--fg);border-color:var(--line)}
+  a.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px -10px rgba(233,178,94,.35)}
+  a.btn--ghost:hover{border-color:var(--brand);color:var(--brand);box-shadow:none}
+  .mk{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid var(--line);color:#737b8b;font-size:.9rem}
+</style>
+</head>
+<body>
+  <main>
+    <div class="code">404</div>
+    <h1>This page moved or never existed</h1>
+    <p>The link you followed is not part of the site any more. Everything we build is still one click away.</p>
+    <div class="row">
+      <a class="btn" href="/veles/index.html">Go to homepage</a>
+      <a class="btn btn--ghost" href="/veles/ostanati%20strani/Kitchen.html">Browse kitchens</a>
+    </div>
+    <p class="mk" lang="mk">Страницата не постои. <a href="/veles/index_MKD.html" style="color:var(--brand)">Одете на почетна страница</a>.</p>
+  </main>
+</body>
+</html>
